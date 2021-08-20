@@ -15,10 +15,14 @@ function App() {
         <li>Calculate the total number of counters</li>
       </ul>
       <h1>Counter</h1>
-      <h3>Total: 0</h3>
+      <h3>Total: 12</h3>
       {/* Add new counters here */}
       <p>
-        Example: 0 <button>+</button>&nbsp;
+        Cats: 7 <button>+</button>&nbsp;
+        <button>-</button>
+      </p>
+      <p>
+        Dogs: 5 <button>+</button>&nbsp;
         <button>-</button>
       </p>
       <p>
