@@ -32,7 +32,7 @@ You will also see any lint errors in the console.
 
 1. Use the New counter form to add multiple counters with + and - buttons.
 2. Each new counter will start from 0
-3. - and - buttons will increase/decrease the counter respectively.
+3. `+` and `-` buttons will increase/decrease the counter respectively.
 4. Calculate the total number of counters
 
 ![Task Assignment](/public/react-task.gif?raw=true)
