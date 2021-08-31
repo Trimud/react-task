@@ -35,4 +35,4 @@ You will also see any lint errors in the console.
 3. - and - buttons will increase/decrease the counter respectively.
 4. Calculate the total number of counters
 
-[Task Assignment](public/react-task.gif)
+![Task Assignment](/public/react-task.gif?raw=true)
