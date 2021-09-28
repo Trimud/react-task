@@ -1,13 +1,20 @@
 import React from "react";
 import CounterItem from "./CounterItem";
 
-const CountersDisplay = () => {
-  return (
-    <React.Fragment>
-      <CounterItem title="Cats" count="7" />
-      <CounterItem title="Dogs" count="5" />
-    </React.Fragment>
-  );
+const CountersDisplay = ({ counters, updateCounters }) => {
+  const renderCounters = () => {
+    console.log(Object.values(counters));
+    return Object.values(counters).map((counter) => {
+      return (
+        <CounterItem
+          key={counter.name}
+          itemCounter={counter}
+          doUpdateCounter={updateCounters}
+        />
+      );
+    });
+  };
+  return <React.Fragment>{renderCounters()}</React.Fragment>;
 };
 
 export default CountersDisplay;
