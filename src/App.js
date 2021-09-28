@@ -1,35 +1,20 @@
 import "./App.css";
 
+import TaskHeader from "./components/TaskHeader";
+import CounterForm from "./components/CounterForm";
+import CounterTotal from "./components/CounterTotal";
+import CountersDisplay from "./components/CountersDisplay";
+
 function App() {
   return (
     <div className="App">
-      <p>
-        <strong>Task Description:</strong>
-      </p>
-      <ul>
-        <li>
-          Use the New counter form to add multiple counters with + and -
-          buttons. <br />
-          Each new counter will start from 0<br />
-          They will increase/decrease the counter.
-        </li>
-        <li>Calculate the total number of counters</li>
-      </ul>
+      <TaskHeader />
       <h1>Counter</h1>
-      <h3>Total: 12</h3>
+      <CounterTotal />
       {/* Start example here */}
-      <p>
-        Cats: 7 <button>+</button>&nbsp;
-        <button>-</button>
-      </p>
-      <p>
-        Dogs: 5 <button>+</button>&nbsp;
-        <button>-</button>
-      </p>
+      <CountersDisplay />
       {/* End example here */}
-      <p>
-        New counter: <input type="text" /> <button type="button">Add</button>
-      </p>
+      <CounterForm />
     </div>
   );
 }
